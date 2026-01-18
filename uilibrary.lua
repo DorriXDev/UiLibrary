@@ -750,7 +750,7 @@ function FlurioreLib:MakeGui(GuiConfig)
         game:GetService("VirtualInputManager"):SendKeyEvent(false, "RightShift",false,game)
 	end
 	UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.B then
+		if input.KeyCode == Enum.KeyCode.P then
 			if DropShadowHolder.Visible then
 				DropShadowHolder.Visible = false
 			else
@@ -2214,4 +2214,5 @@ function FlurioreLib:MakeGui(GuiConfig)
 	end
 	return Tabs
 end
+
 return FlurioreLib
